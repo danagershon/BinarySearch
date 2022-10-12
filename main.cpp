@@ -1,6 +1,9 @@
 #include <iostream>
 #include <vector>
 #include "regularBinarySearch.cpp"
+#include "bisect.cpp"
+#include "findClosest.cpp"
+#include "findOccurrences.cpp"
 
 void printVector(std::vector<int>& vec){
     for(const auto& num: vec){
@@ -24,12 +27,18 @@ int main() {
 
     std::vector<int> targets{0,1,5,12,13};
 
-    std::cout << "\nTesting binary search function 1:" << std::endl;
+    /*std::cout << "\nTesting binary search function 1:" << std::endl;
     testBinarySearch(vec,targets,&binarySearch1);
     std::cout << "\nTesting binary search function 2:" << std::endl;
     testBinarySearch(vec,targets,&binarySearch2);
     std::cout << "\nTesting binary search function 3:" << std::endl;
     testBinarySearch(vec,targets,&binarySearch3);
+    std::cout << "\nTesting bisect left:" << std::endl;
+    testBinarySearch(vec,targets,&bisectLeft);
+    std::cout << "\nTesting bisect right:" << std::endl;
+    testBinarySearch(vec,targets,&bisectRight);*/
+    std::cout << "\nTesting last occurrence2:" << std::endl;
+    testBinarySearch(vec,targets,&findLastOccurrence2);
 
     return 0;
 }

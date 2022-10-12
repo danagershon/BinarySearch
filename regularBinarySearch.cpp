@@ -79,7 +79,8 @@ int binarySearch3(std::vector<int>& vec, int target){
 }
 
 // example when there is infinite loop
-/*int binarySearch3bad(std::vector<int>& vec, int target){
+/*int binarySearch3bad
+ * (std::vector<int>& vec, int target){
     int l = 0;
     int h = static_cast<int>(vec.size() - 1);
 
